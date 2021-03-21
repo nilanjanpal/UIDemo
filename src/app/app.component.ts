@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { OrgService } from './services/org.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'sample-ui-template';
+
+  constructor(public orgService: OrgService) {}
+
+  onClear() {
+    this.orgService.clearAllFilters();
+  }
 }

@@ -1,0 +1,17 @@
+<table class="table table-hover" style="font-size: 14px;">
+    <thead>
+      <tr>
+        <th scope="col" class="text-center" style="width: 50px;" *ngFor="let colname of tableColumns">{{colname}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of tableData">
+        <td class="text-center">{{data.company}}</td>
+        <td class="text-center">{{data.ceo}}</td>
+        <td>{{data.description}}</td>
+        <td class="text-center">{{data.employees}}</td>
+        <td class="text-center">{{data.revenue}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <app-modal></app-modal>

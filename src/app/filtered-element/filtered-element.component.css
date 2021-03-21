@@ -1,0 +1,11 @@
+.filterElement{
+    font-size: 12px; 
+    background-color: #e8e5dc;
+    /* border: black; 
+    border-style: solid; 
+    border-width: 1px; */
+}
+
+svg {
+    cursor: pointer;
+}
